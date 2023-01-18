@@ -18,7 +18,7 @@ const episode = async (req, res) => {
     let data = await axios.post(
         'https://anslayer.com/anime/public/episodes/get-episodes-new',
         new URLSearchParams({
-            'inf': '',
+            'inf': '{"a": "mrg+e9GTkHaj8WXD7Cz3+Wbc1E4xYrvHLqW1vRF8xSo2B4K7Y5B7wcjHaoL1haW8Ynp3gYuGBRWFY/XaoEzVRcM/g8pJtaAT3FgwZh+KajpmkenxL0V/ghBXTwctGtEQFUO/UAJVGx2QClCE6gKSTQ==", "b": "102.185.179.127"}',
             'json': `{"anime_id":${req.query.animeId},"episode_id":"${req.query.episodeId}"}`
         }),
         {
@@ -54,7 +54,7 @@ const episode = async (req, res) => {
             'https://anslayer.com/la/public/api/fw',
             new URLSearchParams({
                 'n': urls[1].episode_url.replace("https://anslayer.com/la/public/api/f2?n=", ""),
-                'inf': ''
+                'inf': '{"a": "mrg+e9GTkHaj8WXD7Cz3+Wbc1E4xYrvHLqW1vRF8xSo2B4K7Y5B7wcjHaoL1haW8Ynp3gYuGBRWFY/XaoEzVRcM/g8pJtaAT3FgwZh+KajpmkenxL0V/ghBXTwctGtEQFUO/UAJVGx2QClCE6gKSTQ==", "b": "102.185.179.127"}'
             }),
             {
                 headers: {
@@ -86,7 +86,7 @@ const episode = async (req, res) => {
             new URLSearchParams({
                 'f': params_.get('f'),
                 'e': params_.get('e'),
-                'inf': ''
+                'inf': '{"a": "mrg+e9GTkHaj8WXD7Cz3+Wbc1E4xYrvHLqW1vRF8xSo2B4K7Y5B7wcjHaoL1haW8Ynp3gYuGBRWFY/XaoEzVRcM/g8pJtaAT3FgwZh+KajpmkenxL0V/ghBXTwctGtEQFUO/UAJVGx2QClCE6gKSTQ==", "b": "102.185.179.127"}'
             }),
             {
                 headers: {
