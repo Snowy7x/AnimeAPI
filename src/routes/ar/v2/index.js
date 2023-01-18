@@ -71,8 +71,9 @@ router.post("/schedule", require("./schedule"))
 
 module.exports = router;
 
-const axios = require("axios");
 /*
+const axios = require("axios");
+
 const first = () => {
     let latestAddedAnimes = {
         "_offset": 0,

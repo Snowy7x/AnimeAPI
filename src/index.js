@@ -11,7 +11,7 @@ const corsOptions ={
 app.use(cors(corsOptions))
 app.use(express.json())
 
-app.use("/ar/v1", require("./routes/ar/v1"))
+// app.use("/ar/v1", require("./routes/ar/v1"))
 app.use("/ar/v2", require("./routes/ar/v2"))
 
 app.listen(3069, err => {
