@@ -1,0 +1,19 @@
+{
+  "name": "AnimeApi",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.2.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.1.5",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20",
+    "puppeteer": "^19.4.1",
+    "rncryptor-node": "^0.0.2"
+  }
+}

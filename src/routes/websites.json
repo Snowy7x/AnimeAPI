@@ -1,0 +1,214 @@
+{
+  "ar": {
+    "animelek": {
+      "name": "Animelek",
+      "url": "https://animelek.me/",
+      "isHref": false,
+      "latest": {
+        "hasNum": true,
+        "url": "https://animelek.me/episode/?page=",
+        "path": ".episodes-card-container",
+        "imgPath": "img",
+        "titlePath": ".ep-card-anime-title h3",
+        "animeUrlPath": ".ep-card-anime-title h3 a",
+        "episodeNumPath": ".ep-card-anime-title h4",
+        "episodeUrlPath": ".ep-card-anime-title h4 a"
+      },
+      "animeInfo": {
+        "url": "https://animelek.me/anime/",
+        "coverPath": ".anime-thumbnail-pic img",
+        "titlePath": ".anime-container-data h1",
+        "descriptionPath": ".anime-container-data .anime-story",
+        "episodesPath": ".episodes-list-content .episodes-card-container",
+        "genrePath": ".anime-container-data .anime-genres li",
+        "ep_numPath": ".ep-card-anime-title-detail h3 a",
+        "ep_imgPath": "img",
+        "ep_urlPath": ".ep-card-anime-title-detail h3 a",
+        "ep_urlAttr": "href",
+        "statsPath": ".full-list-info",
+        "statsNamePath": "small",
+        "statsValuePath": "small",
+        "statsCount": 6
+      },
+      "episodeInfo": {
+        "url": "https://animelek.me/episode/",
+        "streamPath": "#watch .all-episodes-list li",
+        "streamNamePath": "a",
+        "streamUrlPath": "a",
+        "streamAttr": "data-ep-url",
+        "downloadPath": "#downloads .all-episodes-list li",
+        "downloadNamePath": "a",
+        "downloadUrlPath": "a",
+        "downloadAttr": "href",
+        "replaces": ["AnimeLek", "انمي ليك", "مترجمة اون لاين -", ""],
+        "nextAttr": "rel",
+        "nextUrlPath": ".navigation-episodes a",
+        "nextUrlAttr": "href",
+        "nextAttrValue": "next",
+        "prevAttrValue": "prev"
+      },
+      "searchInfo": {
+        "url": "https://animelek.me/search/?s=",
+        "resultPath": ".anime-card-container",
+        "result": {
+            "url": "a",
+            "urlAttr": "href",
+            "titlePath": "h3 a",
+            "imgPath": "img",
+            "seasonPath": "h4 a",
+            "statusPath": ".anime-card-status a"
+        }
+      }
+    },
+    "witanime":{
+      "name": "WitAnime",
+      "url": "https://witanime.com/",
+      "isHref": false,
+      "latest": {
+        "hasNum": false,
+        "url": "https://witanime.com/",
+        "path": ".episodes-card-container",
+        "imgPath": "img",
+        "titlePath": ".ep-card-anime-title h3",
+        "animeUrlPath": ".ep-card-anime-title h3 a",
+        "episodeNumPath": ".episodes-card-title h3 a",
+        "episodeUrlPath": ".episodes-card-title h3 a"
+      },
+      "animeInfo": {
+        "url": "https://witanime.com/anime/",
+        "coverPath": ".anime-thumbnail img",
+        "titlePath": ".anime-details h1",
+        "descriptionPath": ".anime-details .anime-story",
+        "episodesPath": "#DivEpisodesList .episodes-card",
+        "genrePath": ".anime-details .anime-genres li",
+        "ep_numPath": ".episodes-card-title h3 a",
+        "ep_imgPath": "img",
+        "ep_urlPath": ".episodes-card-title h3 a",
+        "ep_urlAttr": "href",
+        "statsPath": ".anime-details .row .anime-info",
+        "statsNamePath": "span",
+        "statsValuePath": "",
+        "statsCount": 6
+      },
+      "episodeInfo": {
+        "url": "https://witanime.com/episode/",
+        "streamPath": "#episode-servers li",
+        "streamNamePath": "a",
+        "streamUrlPath": "a",
+        "streamAttr": "data-ep-url",
+        "downloadPath": ".quality-list li",
+        "downloadNamePath": "a",
+        "downloadUrlPath": "a",
+        "downloadAttr": "href",
+        "replaces": ["WitAnime", "انمي ليك"],
+        "titlePath": ".main-section .container h3"
+      },
+      "searchInfo": {
+        "url": "https://witanime.com/?search_param=animes&s=",
+        "resultPath": ".anime-card-container",
+        "result": {
+          "url": "a",
+          "urlAttr": "href",
+          "titlePath": "h3 a",
+          "imgPath": "img",
+          "typePath": ".anime-card-type a",
+          "statusPath": ".anime-card-status a"
+        }
+      },
+      "seasonal": {
+        "url": "https://witanime.com/anime-season/%d8%b1%d8%a8%d9%8a%d8%b9-2022/",
+        "seasonPath": ".main-section ,container h3",
+        "animePath": ".anime-card-container",
+        "animeUrl": "a",
+        "urlAttr": "href",
+        "titlePath": "h3 a",
+        "imgPath": "img",
+        "typePath": ".anime-card-type a",
+        "statusPath": ".anime-card-status a"
+      }
+    },
+    "xsanime": {
+      "name": "XSAnime",
+      "url": "https://v.xsanime.com/",
+      "isHref": false,
+      "latest": {
+        "hasNum": true,
+        "url": "https://v.xsanime.com/episodes?",
+        "path": ".itemtype_episode",
+        "imgPath": "img",
+        "titlePath": ".itemtype_episode_name",
+        "animeUrlPath": "a",
+        "episodeNumPath": ".itemtype_number",
+        "episodeUrlPath": "a"
+      },
+      "animeInfo": {
+        "url": "https://v.xsanime.com/anime/",
+        "murl": "https://v.xsanime.com/movie/",
+        "coverPath": ".post--singles .poster--inner .inner--image img",
+        "titlePath": ".post--singles .post--metas .post--inner-title",
+        "descriptionPath": ".post--singles .post--metas .post--content--inner",
+        "episodesPath": ".EpisodesList a",
+        "genrePath": ".post--singles .post--metas .terms--and--metas li:nth-child(1) a",
+        "ep_numPath": "em",
+        "ep_imgPath": ".post--singles .poster--inner .inner--image img",
+        "ep_urlAttr": "href",
+        "statsPath": ".post--singles .post--metas .terms--and--metas li",
+        "statsNamePath": "span",
+        "statsValuePath": "a",
+        "statsCount": 4
+      },
+      "episodeInfo": {
+        "title": ".episode--head .anime--title h1",
+        "url": "https://v.xsanime.com/episode/",
+        "streamPath": ".watch--servers--list li",
+        "streamNamePath": "span",
+        "streamUrlPath": "a",
+        "streamAttr": "data-ep-url",
+        "downloadPath": ".downloads .download--item",
+        "downloadNamePath": ".txt span",
+        "downloadUrlPath": "a",
+        "downloadAttr": "href",
+        "replaces": ["XSAnime", "انمي ليك", "مترجمة اون لاين -", ""],
+        "nextAttr": "class",
+        "nextUrlPath": ".episodes--buttons a",
+        "nextUrlAttr": "href",
+        "nextAttrValue": "next",
+        "prevAttrValue": "prev"
+      },
+      "searchInfo": {
+        "url": "https://v.xsanime.com/?s=",
+        "resultPath": ".itemtype_anime",
+        "result": {
+          "url": "a",
+          "urlAttr": "href",
+          "titlePath": "h4",
+          "imgPath": "a .itemtype_anime_poster img",
+          "seasonPath": "em",
+          "statusPath": "em"
+        }
+      }
+    }
+  },
+  "en": {
+    "gogoanime.onl":{
+      "latest": {
+        "url": "https://gogoanime.onl",
+        "hasNum": false,
+        "path": ".last_episodes ul li",
+        "imgPath": "img",
+        "titlePath": ".name",
+        "animeUrlPath": ".name a",
+        "episodeNumPath": ".episode",
+        "episodeUrlPath": ".episode a"
+      },
+
+      "animeInfo": {
+        "url": "https://gogoanime.onl/anime/"
+      },
+
+      "episodeInfo": {
+        "url": "https://gogoanime.onl/episode/"
+      }
+    }
+  }
+}
