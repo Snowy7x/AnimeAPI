@@ -58,6 +58,7 @@ const episode = async (req, res) => {
             }),
             {
                 headers: {
+                    'User-Agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
                     'Host': 'anslayer.com'
                 }
             }
@@ -88,7 +89,13 @@ const episode = async (req, res) => {
                 'inf': '{"a": "4+mwbwVfA5wLr7a4GBQvzMy1/jO9fRQ/lKJXNS4vbW/FqNL3j0vtOPd5pQx2UxrJ/8UF0Xr/v/dxkse3tjvEg/1uLKKZM8CALrQrGtw0pQqZ+UiyBJqVXe9tlbFSkV9XQRkIC6qjY66uzkzk6wauPw==", "b": "217.138.207.148"}'
             }),
             {
+                proxy: {
+                  protocol: "http",
+                  host: "163.116.158.143",
+                  port: "8081"
+                },
                 headers: {
+                    'User-Agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
                     'Host': 'anslayer.com'
                 }
             }
