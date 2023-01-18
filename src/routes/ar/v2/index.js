@@ -67,7 +67,6 @@ router.get("/search", require("./search"))
 router.get("/episodes", require("./episodes"))
 router.get("/servers", require("./servers"))
 router.post("/episode", require("./episode"))
-router.post("/episode", require("./episode"))
 router.post("/schedule", require("./schedule"))
 
 module.exports = router;
