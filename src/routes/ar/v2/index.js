@@ -72,6 +72,7 @@ router.post("/schedule", require("./schedule"))
 module.exports = router;
 
 const axios = require("axios");
+/*
 const first = () => {
     let latestAddedAnimes = {
         "_offset": 0,
@@ -162,3 +163,4 @@ const third = () => {
             console.log(error);
         });
 }
+*/
