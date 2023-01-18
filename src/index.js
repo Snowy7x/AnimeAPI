@@ -14,7 +14,7 @@ app.use(express.json())
 app.use("/ar/v1", require("./routes/ar/v1"))
 app.use("/ar/v2", require("./routes/ar/v2"))
 
-app.listen(3069, err => {
+app.listen(4000, err => {
     if (err) return console.log("Error: ", err)
     console.log("Listening on port: 3069")
 })
