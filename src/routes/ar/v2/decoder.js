@@ -529,7 +529,6 @@ function detect(str) {
 }
 
 function get_chunks(str) {
-    console.log("str", str)
     var chunks = str ? str.match(/eval\(\(?function\(.*?(,0,\{\}\)\)|split\('\|'\)\)\))($|\n)/g) : []
     return chunks ? chunks : [];
 }

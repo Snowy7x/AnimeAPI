@@ -26,8 +26,6 @@ const search = async (req, res) => {
         }
     };
 
-    console.log(config);
-
     let data = await axios(config)
         .then(function (response) {
             return {
@@ -36,13 +34,12 @@ const search = async (req, res) => {
             };
         })
         .catch(function (error) {
-            //console.log("ar/v2/Latest [29] Error:", error)
+            console.log("ar/v2/Latest [29] Error:", error)
             return {
                 code: 400,
                 data: error
             }
         });
-        console.log(data)
     res.status(data.code).json(data)
 }
 

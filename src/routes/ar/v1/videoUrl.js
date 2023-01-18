@@ -5,7 +5,6 @@ const axios = require("axios");
 const fetch = require("cross-fetch");
 
 async function streamtap(url) {
-    console.log(url)
     return await fetch(url, {
         "headers": {
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
@@ -58,7 +57,6 @@ function Uqload(req, res, html) {
 }
 
 async function linkBox(url) {
-    console.log(url)
     const response = await axios.get("https://www.linkbox.to/api/open/get_url?itemId=" + url.split("id=")[1])
     return response.data.data.url;
 }

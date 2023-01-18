@@ -13,7 +13,6 @@ const episode = async (req, res) => {
     }
     /*let c = await axios.post("https://www.mediafire.com/file/rebkxbx43re7jd8")
     let i = Decoder.decode("https://www.mediafire.com/file/rebkxbx43re7jd8", c.data)
-    console.log(i)
     res.json({})
     return;*/
     let data = await axios.post(
@@ -39,7 +38,6 @@ const episode = async (req, res) => {
         })
         .catch(function (error) {
             console.log("ar/v2/episode [41] Error:", error.message)
-            console.log("params", req.query.animeId, req.query.episodeId)
             return {
                 code: 400,
                 data: error.message,
@@ -71,7 +69,6 @@ const episode = async (req, res) => {
                 return null
             })
             if (c === null) continue
-            console.log(s)
             let i = Decoder.decode(s, c.data)
             if (i) {
                 let json = JSON.parse(i)
