@@ -58,7 +58,7 @@ const episode = async (req, res) => {
             }),
             {
                 headers: {
-                    'User-Agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
+                    'User-Agent': 'okhttp/3.12.12',
                     'Host': 'anslayer.com'
                 }
             }
@@ -86,16 +86,11 @@ const episode = async (req, res) => {
             new URLSearchParams({
                 'f': params_.get('f'),
                 'e': params_.get('e'),
-                'inf': '{"a": "4+mwbwVfA5wLr7a4GBQvzMy1/jO9fRQ/lKJXNS4vbW/FqNL3j0vtOPd5pQx2UxrJ/8UF0Xr/v/dxkse3tjvEg/1uLKKZM8CALrQrGtw0pQqZ+UiyBJqVXe9tlbFSkV9XQRkIC6qjY66uzkzk6wauPw==", "b": "217.138.207.148"}'
+                'inf': '{"a": "mrg+e9GTkHaj8WXD7Cz3+Wbc1E4xYrvHLqW1vRF8xSo2B4K7Y5B7wcjHaoL1haW8Ynp3gYuGBRWFY/XaoEzVRcM/g8pJtaAT3FgwZh+KajpmkenxL0V/ghBXTwctGtEQFUO/UAJVGx2QClCE6gKSTQ==", "b": "102.185.179.127"}'
             }),
             {
-                proxy: {
-                  protocol: "http",
-                  host: "163.116.158.143",
-                  port: "8081"
-                },
                 headers: {
-                    'User-Agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
+                    'User-Agent': 'okhttp/3.12.12',
                     'Host': 'anslayer.com'
                 }
             }
