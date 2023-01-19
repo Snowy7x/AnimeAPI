@@ -100,6 +100,7 @@ const episode = async (req, res) => {
             for (let i in js) {
                 let link = js[i].file
                 js[i].label = link.includes("h.mp4") ? "1080p" : link.includes("m.mp4") ? "720p" : link.includes("s.mp4") ? "480p" : "av"
+                js[i].file = "http://31.187.75.164:3069/ar/v2/proxy?url=" + encodeURIComponent(js[i].file);
             }
             return js
         });

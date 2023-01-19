@@ -1,5 +1,16 @@
 const express = require("express")
 let router = express.Router();
+const fetch = require("node-fetch")
+const axios = require("axios");
+const {response} = require("express");
+
+const getFetchHeader = async (headers) => {
+    const data = {}
+    for (let [key, value] of headers) {
+        data[key] = value
+    }
+    return data
+}
 
 /*
 "Value must be one of: latest_episodes, custom_list, anime_list, currently_airing, latest_updated_episode,
@@ -68,6 +79,17 @@ router.get("/episodes", require("./episodes"))
 router.get("/servers", require("./servers"))
 router.post("/episode", require("./episode"))
 router.post("/schedule", require("./schedule"))
+
+router.get("/proxy", async (req, res) => {
+    if (!req.query.url) return res.status(404).json({success: false})
+    return await fetch(req.query.url, {headers: {range: req.headers.range}}).then(async response => {
+        if (!response.ok) return res.status(404).json({success: false, data: response})
+        res.set(await getFetchHeader(response.headers))
+        response.body.pipe(res.status(206))
+        response.body.on('error', () => {
+        })
+    })
+})
 
 module.exports = router;
 
